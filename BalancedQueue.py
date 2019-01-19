@@ -44,3 +44,5 @@ p = Problem()
 #p.initialState()
 #p.FindMax(p.initialState())
 #p.actions(p.initialState())
+hc = HillClimbing(p, 'random_restart')		
+
