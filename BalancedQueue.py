@@ -14,6 +14,19 @@ class Problem():
        queue = [2, 8, 6, 5, 2, 0]
        #print(queue)
        return queue
+	
+	#hueristic function that calculate the max of subarrays
+    def FindMax(self,queue):
+       tmp = [] 
+       queue= split_list(queue, 2)
+       #print(queue) 
+       #print(sum(tem)) 
+       for item in queue:   
+        tmp.append(sum(item))
+       #print(max(tmp))
+       maxium = max(tmp) 
+       return maxium 
+   
 
 p = Problem()
 p.initialState()
