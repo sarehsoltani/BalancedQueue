@@ -39,8 +39,8 @@ class Problem():
                 results.append(next_state)
                 print(next_state,value)    
         return results
-
-   
-
+		
 p = Problem()
-p.initialState()
+#p.initialState()
+#p.FindMax(p.initialState())
+#p.actions(p.initialState())
