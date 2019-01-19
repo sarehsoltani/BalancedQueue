@@ -26,6 +26,20 @@ class Problem():
        #print(max(tmp))
        maxium = max(tmp) 
        return maxium 
+	   
+    def actions(self,state):
+        results = []
+        for i in range(0,6):
+            for j  in range(i+1, 6):
+                next_state = deepcopy(state)
+                temp = next_state[i]
+                next_state[i] = next_state[j]
+                next_state[j] = temp
+                value = self.FindMax(next_state)
+                results.append(next_state)
+                print(next_state,value)    
+        return results
+
    
 
 p = Problem()
